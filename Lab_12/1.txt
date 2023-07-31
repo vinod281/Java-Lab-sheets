@@ -1,0 +1,31 @@
+01)
+1- There is no difference between declaring an interface variable with or without public static final keywords. All interface variables are implicitly treated as public static final.
+public interface MyFirstInterface 
+{
+    int x = 10; // Equivalent to: public static final int x = 10;
+} 
+2-There is no difference between declaring an abstract method with or without the abstract keyword. All interface methods are implicitly treated as abstract.
+public interface MyFirstInterface 
+{
+    void display(); // Equivalent to: abstract void display();
+}
+3-It is not possible to change the value of x inside the class implementing the interface. Interface variables are implicitly public static final, making them constants, and their values cannot be changed once assigned.
+public interface MyFirstInterface 
+{
+    int x = 10;
+
+    void display();
+}
+
+public class InterfaceImplemented implements MyFirstInterface 
+{
+    @Override
+    public void display() 
+{
+        // Attempt to change the value of x (Will cause a compilation error)
+        x = 20;
+        System.out.println("Value of x: " + x);
+    }
+}
+Attempting to change the value of x in the InterfaceImplemented class will cause a compilation error with the message: "error: cannot assign a value to final variable x". This is because x is declared as final in the interface and cannot be modified in implementing classes.
+
