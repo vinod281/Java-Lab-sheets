@@ -1,0 +1,22 @@
+practical 02)
+
+02) Part 2
+1-super
+2-private
+3-packages
+4- import pkg.*	
+5- charAt()
+6- length()
+
+03)	Part 3
+
+1-attributes and behaviour
+2-instance varibles
+3-methods
+4-Encapsulation
+5-class
+6-base class, sub class, extends
+7-Interface
+8-Package
+9-Application Programming Interface
+
